@@ -20,7 +20,7 @@ if st.button("Evaluate Resume"):
         st.warning("Please provide both job requirements and resume text.")
     else:
         # Set up Gemini LLM
-        os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+        os.environ["GOOGLE_API_KEY"] = "AIzaSyDxyJwavmBC94zeLTuU0AhGqNB2021tkac"
         llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.2)
 
         # Prompt template
